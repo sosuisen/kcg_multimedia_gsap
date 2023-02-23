@@ -1,6 +1,10 @@
 const move = () => {
     // 指定の相対位置へ移動
-    gsap.to('.circle', { x: 200 });
+    gsap.to(".circle", { x: 200 });
+
+    // 同じ対象へ2つ以上に分けて指示しても合成される。
+    // gsap.to(".circle", { x: 100 }); 
+    // gsap.to(".circle", { y: 100 }); 
 
     // 指定の相対位置から移動
     // gsap.from('.circle', { x: 100, y: 100 }); 
@@ -62,9 +66,9 @@ const easing = () => {
     gsap.to('#b3', { duration: 2, x: 100, rotation: 360, ease: 'bounce.out' });
 }
 
-// move();
+move();
 // colorAndDuration();
 // rotation();
 // repeat();
 // delay();
-easing();
+// easing();
