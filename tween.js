@@ -1,6 +1,6 @@
 const move = () => {
     // 指定の相対位置へ移動
-    // gsap.to(".circle", { x: 200 });
+    gsap.to(".circle", { x: 200 });
 
     // 同じ対象へ2つ以上に分けて指示しても合成される。
     // gsap.to(".circle", { x: 100 }); 
