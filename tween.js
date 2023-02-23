@@ -62,9 +62,9 @@ const easing = () => {
     gsap.to('#b3', { duration: 2, x: 100, rotation: 360, ease: 'bounce.out' });
 }
 
-// move();
+move();
 // colorAndDuration();
 // rotation();
 // repeat();
 // delay();
-easing();
+// easing();
