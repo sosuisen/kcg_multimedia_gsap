@@ -1,0 +1,31 @@
+.button {
+    cursor: pointer; /* ボタンの上でのカーソル形状を指定 */
+    text-align: center; /* 文字は中央揃え */
+    user-select: none; /* クリックしても文字が選択されない */
+
+    position: absolute;
+    left: 100px;
+    top: 100px;
+
+    padding-top: 15px; /* ボタンの高さの上側の余白 */
+    padding-bottom: 15px; /* ボタンの高さの下側の余白 */
+
+    border-radius: 7px; /* 丸角 */
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+
+    opacity: 1.0; /* 不透明度。これは書かなくてもデフォルトで1.0。*/
+    background-color: #9090ff;
+
+    transition: all 0.7s;
+}
+
+.button:hover {
+    opacity: 0.3;
+    background-color: #90ff90;
+    border-radius: 50%;
+    transform: scale(2.0, 2.0);
+    transform: rotateX(360deg);
+}
