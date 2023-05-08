@@ -23,9 +23,5 @@
 }
 
 .button:hover {
-    opacity: 0.3;
-    background-color: #90ff90;
-    border-radius: 50%;
-    transform: scale(2.0, 2.0);
-    transform: rotateX(360deg);
+
 }
