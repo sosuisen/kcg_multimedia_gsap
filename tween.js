@@ -1,24 +1,24 @@
 const move = () => {
     // 指定の相対位置へ移動
-    gsap.to(".circle", { x: 200 });
+    gsap.to('.circle', { x: 200 });
 
     // 同じ対象へ2つ以上に分けて指示しても合成される。
-    // gsap.to(".circle", { x: 100 }); 
-    // gsap.to(".circle", { y: 100 }); 
+    // gsap.to('.circle', { x: 100 }); 
+    // gsap.to('.circle', { y: 100 }); 
 
     // 指定の相対位置から移動
-    // gsap.from(".circle", { x: 100, y: 100 }); 
+    // gsap.from('.circle', { x: 100, y: 100 }); 
 
     // 始点と終点の相対位置を指定
-    // gsap.fromTo(".circle",   { x: -100, y: -100 }, { x: 100, y: 100 }); 
+    // gsap.fromTo('.circle',   { x: -100, y: -100 }, { x: 100, y: 100 }); 
 
     // 指定の相対位置へ一瞬で移動
-    // gsap.set(".circle", { x: 100, y: 100 }); 
+    // gsap.set('.circle', { x: 100, y: 100 }); 
 };
 
 const colorAndDuration = () => {
     // 時間指定、色の変更
-    gsap.to(".circle", { duration: 2, x: 200, backgroundColor: '#ff9000' });
+    gsap.to('.circle', { duration: 2, x: 200, backgroundColor: '#ff9000' });
 };
 
 const rotation = () => {
@@ -39,7 +39,7 @@ const repeat = () => {
     gsap.to(c2, { duration: 1, repeat: 2, y: 30 });
 
     // 要素の配列も指定できる
-    const circles = document.querySelectorAll(".circle");
+    const circles = document.querySelectorAll('.circle');
     gsap.to(circles, { duration: 1, repeat: 2, backgroundColor: '#ff9000' });
 };
 
